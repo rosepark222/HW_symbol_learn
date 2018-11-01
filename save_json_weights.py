@@ -25,13 +25,14 @@ from tensorflow.python.keras.models import load_model
 #model = load_model('./me_ep1000_var61_acc90.h5') #./math_equation.h5', custom_objects = { '0':'a', '1':'b', '2': 'c', '3':'d'})
 #model = load_model('./model_sym61_batch500_epoch1000_1st64_2nd32.h5')
 #model = load_model('./model_sym20_batch500_epoch600_1st64_2nd32.h5')
-model = load_model('./model_sym61_batch200_epoch1199_1st64_2nd32.h5')
+#model = load_model('./model_sym61_batch200_epoch1199_1st64_2nd32.h5')
+model = load_model('./weights.checkpoint.best.hdf5')
 
 
 model_json = model.to_json()
-with open( "deploy_model_sym61_epoch1199.json", "w") as json_file:
+with open( "deploy_model_weights.checkpoint.best.json", "w") as json_file:
   json_file.write(model_json)
-model.save_weights("deploy_model_sym61_epoch1199.h5")   
+model.save_weights("deploy_model_weights.checkpoint.best.h5")   
 
 print(model)
 
