@@ -1,10 +1,14 @@
 # Bidirectional Recurrent Neural Network Training 
 
-Summary: Imagine a kid works on math problems using math equations in her iPad software and she (or he) writes down her answer using Apple Pencil. When iPad software recognizes her answer is wrong, it will provide relevant mini problems to help her to learn necessary concepts to solve the original math problem. Meanwhile, her misconceptions are analyzed from her math equation answer and appropriate feedback will be generated for her teachers or parents. This project is a baby step for this lofty goal. An essential technique of this learning platform is called Handwritten Recognition System for Math Equations. As of today, a bidirectional RNN has been trained to recognize 53 math strokes (not symbols -- details come below). Additional processing is planned to bring this recognition to symbol and equation level for complete math equation recognition.
+Overview of the project: Imagine a kid works on math problems in her iPad software and she writes down her answer using Apple Pencil. When iPad recognizes her answer is wrong, it will provide relevant mini problems to help her to learn necessary concepts to solve the original math problem. Meanwhile, her misconceptions are analyzed from her math equation answer and appropriate feedback will be generated for her teachers or parents. This project is a baby step for this lofty goal. An essential technique of this learning platform is Handwritten Recognition System for Math Equations. As of today, a bidirectional RNN has been trained to recognize 53 math strokes (not symbols -- details comes below). Additional processing is planned to bring this recognition to symbol and equation level for complete math equation recognition.
 
-I think the best way to have the feel for this project is to dabble with the deployment in Google cloud:http://pradoxum001.appspot.com/
+I think the best way to have the feel for this project is to dabble with the deployment in the Google cloud:http://pradoxum001.appspot.com/
 
-For some background information about data preparation, please read https://github.com/rosepark222/HW_Rcode
+---
+
+For some background information about data preparation, please refer to https://github.com/rosepark222/HW_Rcode
+
+---
 
 A bidirectional RNN was trained to recognize strokes. The dimensions of input, the first and second hidden layers are 15, 64 and 32, respectively. [LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) cells were used to overcome vanishing gradient issue and when it is necessary to forget previously learnined information. For example, when the subjects in sentences have changed from singular and plural in Natural Language Processing, the previously registered information of the subject being singular should be forgotten and updated by the current information. 
 
