@@ -29,6 +29,10 @@ Important factors that have improved the learning are --
      2) adding offline features, balancing the data, 
      3) removing mislabeled strokes. 
 
-These design choices are ordered in the sequence of project modifications. As long as the confusions are consistent, the correct recognition can be accomplished using the probablistic language model. Further, the problems in an e-learning platform may provide extra information regarding the likelihood of symbols. For example, students are likely to use 'k' in their answers if the description of the problem uses 'k' as a variable. The problem can even require students to use certain symbols to describe their answers. Based on this contextual information, the next step for this project would be the development of probabilistic models for symbol recognition.   
+These design choices are ordered in the sequence of project modifications. As long as the confusions are consistent, the correct recognition can be accomplished using the probablistic language model [Muñoz, 2015]. Further, the problems in an e-learning platform may provide extra information regarding the likelihood of symbols. For example, students are likely to use 'k' in their answers if the description of the problem uses 'k' as a variable. The problem can even require students to use certain symbols to describe their answers. Based on this contextual information, the next step for this project would be the development of probabilistic models for symbol recognition.   
 
-     
+## Reference 
+
+Muñoz, F. Á. (2015). Mathematical Expression Recognition based on Probabilistic Grammars (Doctoral dissertation).
+
+
